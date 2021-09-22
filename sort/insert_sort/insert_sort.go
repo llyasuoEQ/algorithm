@@ -1,5 +1,6 @@
 package insert_sort
 
+// Sort 冒泡排序
 func Sort(arr []int64) []int64 {
 	arrLen := len(arr)
 	if arrLen < 1 {

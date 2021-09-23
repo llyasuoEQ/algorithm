@@ -32,10 +32,8 @@ func BenchmarkSort(b *testing.B) {
 func BenchmarkHibbardSort(b *testing.B) {
 	arr := []int64{2, 1, 3, 6, 2, 3}
 	for i := 0; i < b.N; i++ {
-		tmp := []int64{}
-		for _, v := range arr {
-			tmp = append(tmp, v)
-		}
+		tmp := make([]int64, len(arr))
+		copy(tmp, arr)
 		HibbardSort(tmp)
 	}
 }

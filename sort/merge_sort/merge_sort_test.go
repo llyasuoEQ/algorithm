@@ -1,4 +1,4 @@
-package selection_sort
+package merge_sort
 
 import (
 	"testing"
